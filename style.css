@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+.floor {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 96px;
+  background-color: #2800b8;
+}
+.woot-dance {
+  position: fixed;
+  bottom: 0;
+  transform: translateX(-100px);
+  -webkit-animation: dance linear 10s infinite alternate;
+          animation: dance linear 10s infinite alternate;
+}
+@-webkit-keyframes dance {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(calc(100vw - (290px)));
+  }
+}
+@keyframes dance {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(calc(100vw - (290px)));
+  }
+}
